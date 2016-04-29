@@ -1,0 +1,25 @@
+﻿
+
+<script>
+ $(function () {
+            $("#sortable").sortable({
+                revert: true
+            });
+ });
+    </script>
+<div>
+    <div id="sortable" class="col-md-12" style="margin-bottom:30px">
+    
+        <h3>Integrated pulse report</h3>
+        <div class="col-md-4" style="height:200px;margin-top:30px" ng-include="'app/components/Dashboard/demandSource.html'"></div>
+        <div class="col-md-4" style="height:200px;margin-top:30px" ng-include="'app/components/Dashboard/demandClassification.html'"></div>
+        <div class="col-md-4" style="height:200px;margin-top:30px" ng-include="'app/components/Dashboard/demandStatus.html'"></div>
+       
+    <!--<div id="sortable" class="col-md-12" style="margin-top:30px">-->
+        <div class="col-md-4" style="height:200px;margin-top:30px"  ng-include="'app/components/Dashboard/oppurtunityCategory.html'"></div>
+        <div class="col-md-4" style="height:200px;margin-top:30px" ng-include="'app/components/Dashboard/oppurtunityClassification.html'"></div>
+        <div class="col-md-4" style="height:200px;margin-top:30px" ng-include="'app/components/Dashboard/oppurtunityStatus.html'"></div>
+    </div>
+
+</div>
+<div class="bottomright"> developed by sai kishore</div>

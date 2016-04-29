@@ -1,0 +1,73 @@
+﻿html {
+    font-family: 'Segoe UI';
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body #mainContent {
+    margin-top: 5%;
+}
+
+body .navbar-inverse {
+    background-color: #001f50;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008080', endColorstr='#99DAFF', GradientType=0);
+}
+
+.vertical-spacer3-inverse {
+    margin-left: 10px;
+}
+.bottomright {
+    position: absolute;
+    bottom: 1px;
+    right: 16px;
+    font-size: 18px;
+width:200px;
+}
+body #wrapper {
+    padding-left: 50px;
+}
+
+body .navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+loader {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.dashboard1-container {
+    max-height: 400px;
+    width: 100%;
+    padding: 0 !important;
+}
+
+.table > thead > tr > th {
+    background-color: #001f50;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #4a4a4a;
+    font-weight: 600;
+}
+
+
+.table > tbody > tr {
+    background-color: #ffffff;
+    color: #4a4a4a;
+    font-size: 14px;
+    border: 1px solid #bdbdbd;
+}
+
+    .table > tbody > tr:hover {
+        background-color: #ececec;
+        border: 1px solid #07c2a3;
+    }

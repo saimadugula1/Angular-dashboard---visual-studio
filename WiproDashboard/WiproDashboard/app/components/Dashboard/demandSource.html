@@ -1,0 +1,44 @@
+﻿<div>
+
+    <h4>By Demand Source</h4>
+    <div style="height:200px;overflow-y:auto" data-ng-init="getDemandSourceData()">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Onsite</th>
+                    <th>OffShore</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in byDemandSourceList">
+                    <td>
+                        {{item.Key}}
+                    </td>
+                    <td>
+                        {{item.Onsite}}
+                    </td>
+                    <td>
+                        {{item.Offshore}}
+                    </td>
+                    <td>
+                        {{item.Offshore+item.Onsite}}
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#001f50" style="color: #fff">
+                        Total
+                    </td>
+
+                    <td>{{getTotal5('Onsite')}}</td>
+                    <td>{{getTotal5('Offshore')}}</td>
+
+                    <td>
+                        {{getTotal5('Onsite')+getTotal('Offshore')}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

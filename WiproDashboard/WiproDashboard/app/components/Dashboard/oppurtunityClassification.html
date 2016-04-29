@@ -1,0 +1,44 @@
+﻿<div>
+    
+   <p> <h4>By Opportunity Classification</h4><p>
+    <div style="height:200px;overflow-y:auto" data-ng-init="getOppurtunityClassificationData()">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Onsite</th>
+                    <th>Offshore</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in byOppurtunityClassificationList">
+                    <td>
+                        {{item.Key}}
+                    </td>
+                    <td>
+                        {{item.Onsite}}
+                    </td>
+                    <td>
+                        {{item.Offshore}}
+                    </td>
+                    <td>
+                        {{item.Offshore+item.Onsite}}
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#001f50" style="color: #fff">
+                      Total
+                    </td>
+                  
+                    <td>{{getTotal1('Onsite')}}</td>
+                    <td>{{getTotal1('Offshore')}}</td>
+                    
+                    <td>
+                       {{getTotal1('Onsite')+getTotal('Offshore')}}   
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
